@@ -19,8 +19,8 @@ function ConverterComponent() {
 
   const API_KEY = process.env.REACT_APP_API_KEY;
   // set endpoint for API key (gets all the conversion rates for the based in inital currency (stored in an event object))
-  const endPoint = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${initalCurrency}`; 
-
+  const endPoint = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${initalCurrency}`;
+  
   useEffect(() => {
     const fetchData = async () => { 
       try {
