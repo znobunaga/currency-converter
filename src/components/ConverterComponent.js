@@ -80,11 +80,11 @@ function ConverterComponent() {
       />
 
        {/* made a button to handle the conversion (better UI for user) */} 
-      <button
-        onClick={handleConvert}
-        className="bg-custom-blue hover:bg-custom-light-blue text-custom-grey py-2 px-4 rounded-lg transition duration-300"
+       <button
+         onClick={handleConvert}
+         className="bg-custom-blue hover:bg-custom-blue-dark text-custom-grey hover:text-custom-muted-gold py-2 px-4 rounded-lg transition duration-300"
       >
-        Convert
+         Convert
       </button>
 
       <FinalConvertedAmt 
