@@ -15,7 +15,7 @@ function ConverterComponent() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-// use states to handle convertion and loading and error for error handeling when fetching data from API key
+  // use states to handle convertion and loading and error for error handeling when fetching data from API key
 
   const API_KEY = process.env.REACT_APP_API_KEY;
   // set endpoint for API key (gets all the conversion rates for the based in inital currency (stored in an event object))
@@ -35,8 +35,8 @@ function ConverterComponent() {
     };
     fetchData();
   }, [endPoint, initalCurrency]);  
-    // dependency array set for endpoint and initalCurrency because we want to fetch new exchange rates 
-    // from the API only when our inital currency or endpoint changes
+  // dependency array set for endpoint and initalCurrency because we want to fetch new exchange rates 
+  // from the API only when our inital currency or endpoint changes
 
   const handleAmtChange = (e) => {   // e is the event object that is created each time the user types out a new inital amount
     setInitalAmt(e.target.value);  // so we set our inital amount to e.target.value (the value the user entered) have to extract this way because it is a object
@@ -82,7 +82,7 @@ function ConverterComponent() {
        {/* made a button to handle the conversion (better UI for user) */} 
       <button
         onClick={handleConvert}
-        className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300"
+        className="bg-custom-blue hover:bg-custom-light-blue text-custom-grey py-2 px-4 rounded-lg transition duration-300"
       >
         Convert
       </button>
